@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Recipe Finder</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="nav-container">
+        <a href="#home" onclick="showSection('home')" class="logo">
+          <img
+            src="https://img.freepik.com/free-psd/restaurant-logo-design_23-2151249859.jpg?t=st=1724477970~exp=1724481570~hmac=98e6f168ce3408d25acea60bd2a20bbbbf7600e73b147f096b9646e90168631d&w=1380"
+            alt="Food Finder Logo"
+          />
+        </a>
+        <ul>
+          <li><a href="#home" onclick="showSection('home')">Home</a></li>
+          <li>
+            <a href="#recipes" onclick="showSection('recipes')">Recipes</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+      <div class="home-content">
+        <h1>Look up recipes using the ingredients available in your kitchen</h1>
+      </div>
+    </section>
+
+    <!-- Recipes Section -->
+    <section
+      id="recipes"
+      class="section"
+      style="text-align: center; display: none; margin-top: 120px"
+    >
+      <div class="container">
+        <h1>Recipe Finder</h1>
+        <form>
+          <input type="text" id="search" placeholder="Enter ingredients" />
+          <button type="submit" id="submit" class="btn">Search</button>
+        </form>
+        <div id="results"></div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

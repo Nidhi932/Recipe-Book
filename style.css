@@ -1,0 +1,197 @@
+/* General Reset */
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar styling */
+nav {
+  background-color: white;
+  padding: 10px;
+  margin: 0; /* Ensure no margin around the navbar */
+  position: fixed; /* Keep the navbar fixed at the top */
+  width: 100%; /* Full width */
+  top: 0; /* Stick to the top */
+  z-index: 1000; /* Ensure the navbar is above other content */
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 40px;
+}
+
+nav .logo img {
+  width: 150px;
+  height: 70px; /* Adjust the logo size as needed */
+  margin-right: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  color: black; /* Set text color to black */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+nav ul li a:hover {
+  background-color: #111;
+  color: white; /* Change text color to white on hover */
+}
+
+/* Home Section */
+#home {
+  background: linear-gradient(rgba(8, 8, 8, 0.3), rgba(8, 8, 8, 0.3)),
+    url("https://img.pikbest.com/wp/202408/herbs-spices-exposed-beauty-spice-and-herb-arrangement-on-a-rustic-wooden-background_9908813.jpg!w700wp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh; /* Full viewport height */
+  padding-top: 50px; /* Adjust this based on the navbar height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Remove any padding or margin that might affect layout */
+}
+.home-content {
+  color: white;
+  text-align: center; /* Center text horizontally */
+  margin-top: 0; /* Remove margin-top to align content properly */
+  display: flex; /* Use flexbox to center content vertically and horizontally */
+  flex-direction: column; /* Align items in a column */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  height: 100vh; /* Full viewport height to ensure vertical centering */
+}
+
+.home-content h1,
+.home-content p {
+  color: white;
+  font-size: 2em; /* Adjust font size as needed */
+  margin: 0; /* Remove default margins */
+}
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  font-size: 32px;
+  margin: 0;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+input[type="text"] {
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 12px;
+  width: 300px;
+}
+.btn {
+  cursor: pointer;
+}
+button[type="submit"] {
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 12px 20px;
+  transition: background-color 0.2s;
+}
+
+button[type="submit"]:hover {
+  background-color: #0069d9;
+}
+
+#results {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin: 40px 0;
+}
+
+#results > div {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#results img {
+  border-radius: 8px;
+  margin-bottom: 20px;
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+#results h3 {
+  color: #333;
+  font-size: 24px;
+  margin: 0;
+}
+
+#results ul {
+  margin: 0;
+  padding: 0;
+}
+
+#results li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+#results a {
+  background-color: #007bff;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+#results a:hover {
+  background-color: #0069d9;
+}
